@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".TexttoSign">
+
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="281dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="bg"
+        android:onClick="mainActivity"
+        app:layout_constraintBottom_toTopOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="204dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_image" />
+
+    <ImageView
+        android:id="@+id/imgSigns"
+        android:layout_width="265dp"
+        android:layout_height="265dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/input_waiting"
+        app:layout_constraintBottom_toTopOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/input_waiting" />
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="370dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSigns"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="..." />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="411dp"
+        android:layout_height="379dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bg" />
+
+    <EditText
+        android:id="@+id/edtText"
+        android:layout_width="338dp"
+        android:layout_height="233dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/primary"
+        android:hint="Enter your text here"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textColorHint="@color/secondary"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnShowSigns"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView14"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/btnShowSigns"
+        android:layout_width="203dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="56dp"
+        android:background="#00F2F2F5"
+        android:contentDescription="translate"
+        android:src="@drawable/translate"
+        android:text="Show Signs"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
