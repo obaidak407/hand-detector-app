@@ -23,23 +23,23 @@
 
         <ImageButton
             android:id="@+id/btnadd"
-            android:layout_width="86dp"
-            android:layout_height="65dp"
-            android:layout_marginEnd="24dp"
+            android:layout_width="80dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="16dp"
             android:background="@drawable/enter"
+            android:onClick="mActivity"
             android:src="@drawable/enter"
             android:text="Add"
-            android:onClick="mActivity"
             android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.837" />
+            app:layout_constraintVertical_bias="0.844" />
 
         <ImageButton
             android:id="@+id/btnspace"
             android:layout_width="102dp"
-            android:layout_height="65dp"
+            android:layout_height="52dp"
             android:background="@drawable/space"
             android:src="@drawable/space"
             android:text="Add"
@@ -47,22 +47,22 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnadd"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.837" />
+            app:layout_constraintVertical_bias="0.844" />
 
         <ImageButton
             android:id="@+id/btnclear"
-            android:layout_width="150dp"
-            android:layout_height="65dp"
-            android:background="@drawable/clear"
+            android:layout_width="138dp"
+            android:layout_height="55dp"
+            android:background="#002B2B2B"
             android:src="@drawable/clear"
             android:text="Clear"
             android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btnadd"
-            app:layout_constraintHorizontal_bias="0.173"
+            app:layout_constraintEnd_toStartOf="@+id/btnspace"
+            app:layout_constraintHorizontal_bias="0.213"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.838" />
+            app:layout_constraintVertical_bias="0.859" />
 
         <TextView
             android:id="@+id/tv_text"

@@ -18,7 +18,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+//import android.widget.Toast;
 
 import java.util.Arrays;
 import java.util.Timer;
@@ -49,7 +49,7 @@ public class TexttoSign extends AppCompatActivity {
                 String text = edtText.getText().toString();
                 //Converting String to char array
                 char[] arr = text.toCharArray();
-                Toast.makeText(TexttoSign.this, "Array lenght: "+arr.length+" String lenght: "+text.length(),Toast.LENGTH_LONG).show();
+                //Toast.makeText(TexttoSign.this, "Array lenght: "+arr.length+" String lenght: "+text.length(),Toast.LENGTH_LONG).show();
                 tvText.setText(Arrays.toString(arr));
                 imgSigns.setImageResource(getImageId(arr[0]));
 
@@ -60,7 +60,7 @@ public class TexttoSign extends AppCompatActivity {
                     public void run() {
                         if (i<arr.length){
                             ImageViewAnimatedChange(getApplicationContext(), imgSigns, getImageId(arr[i]));
-                            Toast.makeText(TexttoSign.this, "Toast no: "+i, Toast.LENGTH_SHORT).show();
+                           // Toast.makeText(TexttoSign.this, "Toast no: "+i, Toast.LENGTH_SHORT).show();
                             i++;
                         }
                         new Handler().postDelayed(this,1000);
