@@ -152,9 +152,7 @@ public class SigntoText extends Activity implements CameraBridgeViewBase.CvCamer
         return out;
     }
 
-    public void mActivity(View view) {
-        Intent i = new Intent(SigntoText.this,MainActivity.class);
-        startActivity(i);
-        finish();
+    public void mainactivity(View view) {
+        startActivity(new Intent(SigntoText.this,MainActivity.class));
     }
 }

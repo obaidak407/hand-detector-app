@@ -44,13 +44,16 @@ public class MainActivity extends AppCompatActivity {
 
     public void sign_text(View view) {
         startActivity(new Intent(MainActivity.this,SigntoText.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        finish();
     }
 
     public void text_sign(View view) {
         startActivity(new Intent(MainActivity.this,TexttoSign.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        finish();
     }
 
     public void info(View view) {
-        startActivity(new Intent(MainActivity.this,onboarding_first.class));
+        startActivity(new Intent(MainActivity.this,info.class));
+        finish();
     }
 }

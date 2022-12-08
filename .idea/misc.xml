@@ -6,11 +6,12 @@
         <entry key="..\:/Android Projects/hand_detection-master/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.207" />
         <entry key="..\:/Android Projects/hand_detection-master/app/src/main/res/drawable/ic_launcher_background.xml" value="0.207" />
         <entry key="..\:/Android Projects/hand_detection-master/app/src/main/res/layout/activity_camera.xml" value="0.2821557971014493" />
+        <entry key="..\:/Android Projects/hand_detection-master/app/src/main/res/layout/activity_info.xml" value="0.18" />
         <entry key="..\:/Android Projects/hand_detection-master/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Android Projects/hand_detection-master/app/src/main/res/layout/activity_onboarding_first.xml" value="0.22" />
         <entry key="..\:/Android Projects/hand_detection-master/app/src/main/res/layout/activity_onboarding_second.xml" value="0.2" />
         <entry key="..\:/Android Projects/hand_detection-master/app/src/main/res/layout/activity_onboarding_third.xml" value="0.30572916666666666" />
-        <entry key="..\:/Android Projects/hand_detection-master/app/src/main/res/layout/activity_signto_text.xml" value="0.1" />
+        <entry key="..\:/Android Projects/hand_detection-master/app/src/main/res/layout/activity_signto_text.xml" value="0.5" />
         <entry key="..\:/Android Projects/hand_detection-master/app/src/main/res/layout/activity_splash_screen.xml" value="0.5" />
         <entry key="..\:/Android Projects/hand_detection-master/app/src/main/res/layout/activity_textto_sign.xml" value="0.33" />
         <entry key="..\:/Android Projects/hand_detection-master/app/src/main/res/layout/slider_layout.xml" value="0.3046875" />

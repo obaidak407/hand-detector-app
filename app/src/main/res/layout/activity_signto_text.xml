@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/white"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/ic_launcher_background">
 
     <org.opencv.android.JavaCameraView
         android:id="@+id/frame_Surface"
@@ -15,7 +14,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottom_linear_layout"
         android:layout_width="match_parent"
-        android:layout_height="226dp"
+        android:layout_height="306dp"
         android:layout_gravity="bottom"
         android:background="@color/white"
         android:gravity="center"
@@ -23,8 +22,8 @@
 
         <ImageButton
             android:id="@+id/btnadd"
-            android:layout_width="80dp"
-            android:layout_height="52dp"
+            android:layout_width="93dp"
+            android:layout_height="46dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/enter"
             android:onClick="mActivity"
@@ -34,84 +33,86 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.844" />
+            app:layout_constraintVertical_bias="0.885" />
 
         <ImageButton
             android:id="@+id/btnspace"
-            android:layout_width="102dp"
-            android:layout_height="52dp"
+            android:layout_width="99dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="20dp"
             android:background="@drawable/space"
             android:src="@drawable/space"
             android:text="Add"
             android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnadd"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/btnclear"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.844" />
+            app:layout_constraintVertical_bias="0.875" />
 
         <ImageButton
             android:id="@+id/btnclear"
-            android:layout_width="138dp"
-            android:layout_height="55dp"
+            android:layout_width="85dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="16dp"
             android:background="#002B2B2B"
             android:src="@drawable/clear"
             android:text="Clear"
             android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btnspace"
-            app:layout_constraintHorizontal_bias="0.213"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.859" />
+            app:layout_constraintVertical_bias="0.86" />
 
         <TextView
             android:id="@+id/tv_text"
-            android:layout_width="351dp"
-            android:layout_height="91dp"
-            android:textSize="16sp"
+            android:layout_width="353dp"
+            android:layout_height="127dp"
             android:fontFamily="@font/poppins_regular"
             android:textColor="@color/primary"
+            android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@+id/btnspace"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintHorizontal_bias="0.555"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.197" />
+            app:layout_constraintVertical_bias="0.555" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:background="@color/white"
         android:layout_width="match_parent"
-        android:layout_height="79dp">
+        android:layout_height="61dp"
+        android:background="@color/white">
 
-        <ImageView
-            android:id="@+id/imageView16"
-            android:layout_width="186dp"
+        <ImageButton
+            android:id="@+id/btnspace2"
+            android:layout_width="53dp"
             android:layout_height="41dp"
-            android:layout_marginEnd="128dp"
+            android:background="@color/ic_launcher_background"
+            android:onClick="mainactivity"
+            android:src="@drawable/back"
+            android:text="Add"
+            android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/imageButton7"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.526"
-            app:srcCompat="@drawable/top_image" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
-            android:id="@+id/imageButton7"
-            android:layout_width="43dp"
-            android:layout_height="37dp"
-            android:background="#00FFFFFF"
-            android:contentDescription="bg"
-            android:onClick="mainActivity"
+            android:id="@+id/btnspace3"
+            android:layout_width="256dp"
+            android:layout_height="36dp"
+            android:background="@color/ic_launcher_background"
+            android:src="@drawable/top_app_icon"
+            android:text="Add"
+            android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.028"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.521"
-            app:srcCompat="@drawable/back" />
+            app:layout_constraintStart_toEndOf="@+id/btnspace2"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
